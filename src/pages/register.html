@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>miauchei</title>
+  
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="../../global.css">
+  <link rel="stylesheet" href="../styles/register/style.css">
+</head>
+<body>
+  <div class="decoration">
+    <img src="../images/backgroundDecoration.svg" alt="">
+  </div>
+
+  <div class="bottom-decoration">
+    <img src="../images/backgroundDecorationBottom.svg" alt="">
+  </div>
+  <main>
+    <form action="#">
+      <legend>
+        <img src="../images/svglogo.svg" alt="Logo Marca">
+      </legend>
+      <fieldset>
+        <div class="input">
+
+          <div class="input-wrapper">
+            <label for="name" class="sr-only">Nome</label>
+            <input type="text" id="name" placeholder="Nome" required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="password" class="sr-only">Senha</label>
+            <input type="password" id="password" placeholder="Senha" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="confirmPassword" class="sr-only">Confirmar senha</label>
+            <input type="password" id="confirmPassword" placeholder="Confirmar senha" required>
+          </div>
+
+        </div>
+      </fieldset>
+
+      <fieldset class="second">
+        <div class="checkbox">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="" id="termoUso">
+            <label for="termoUso">Termos de uso</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="" id="emailNewsletter">
+            <label for="emailNewsletter">Novidades no e-mail</label>
+          </div>
+        </div>
+        
+        <div class="interaction">
+          <button type="submit" class="btn-submit"><a href="login.html">Cadastrar</a></button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
