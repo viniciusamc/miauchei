@@ -13,7 +13,7 @@ function toggleMenu() {
 }
 
 function onScroll() {
-  if (scrollY > 85) {
+  if (scrollY > 114) {
     logo.classList.add('hide')
     logoHeader.classList.add('topDown')
     logoHeader.classList.remove('hide')

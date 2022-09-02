@@ -534,6 +534,12 @@ header .icon {
   }
 }
 
+@media (min-width:1200px){
+  .pets-cards {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   .menuBar, .menuBar img{
     display: none;
