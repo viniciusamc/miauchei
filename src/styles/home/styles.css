@@ -18,7 +18,7 @@ body {
 header {
   position: fixed;
   background-color: var(--light-blue);
-  z-index: 1;
+  z-index: 2;
   padding: 0 4rem;
 
   width: 100vw;
@@ -44,12 +44,19 @@ header .icon img{
 }
 
 header .icon {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
 .menuBar {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menuBar img{
+  display: flex;
+  height: 4rem;
 }
 
 .activeMenu{
@@ -419,6 +426,7 @@ header .icon {
   font-weight: 600;
   margin: 20px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: -10;
 }
 
 .carouselpet .card-1{
@@ -443,6 +451,27 @@ header .icon {
 
 .carouselpet .card-6{
   background-color: darkgoldenrod;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.owl-dot{
+  background-color: red;
+  height: 1.5rem;
+  width: 4.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+  margin: 0 .5rem;
+  border: 2px solid var(--blue)!important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active{
+  background-color: var(--brown);
 }
 
 @keyframes downTop {
@@ -481,7 +510,7 @@ header .icon {
 }
 
 @media (min-width: 768px) {
-  .menuBar {
+  .menuBar, .menuBar img{
     display: none;
   }
 
@@ -508,5 +537,9 @@ header .icon {
   .menuDesktop ul li a{
     color: white;
     font-size: 2.4rem;
+  }
+
+  header .icon{
+    display: flex;
   }
 }
