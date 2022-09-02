@@ -400,6 +400,51 @@ header .icon {
   animation: leftRight 500ms;
 }
 
+.wrapper{
+  width: 100%;
+  display: flex;
+}
+
+.wrapper .carouselpet{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.carouselpet .card{
+  line-height: 250px;
+  text-align: center;
+  color: #fff;
+  font-size: 90px;
+  font-weight: 600;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carouselpet .card-1{
+  background-color: red;
+}
+
+.carouselpet .card-2{
+  background-color: green;
+}
+
+.carouselpet .card-3{
+  background-color: blue;
+}
+
+.carouselpet .card-4{
+  background-color: yellow;
+}
+
+.carouselpet .card-5{
+  background-color: brown;
+}
+
+.carouselpet .card-6{
+  background-color: darkgoldenrod;
+}
+
 @keyframes downTop {
   0%{
     opacity: 0;
