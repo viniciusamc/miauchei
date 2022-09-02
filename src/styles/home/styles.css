@@ -186,7 +186,7 @@ header .icon {
 .pet-card {
   padding: 2rem;
   background-color: white;
-  height: 50rem;
+  height: 52rem;
   width: 90%;
   max-width: 35rem;
   margin: 0 auto;
@@ -243,9 +243,7 @@ header .icon {
   margin-top: 16rem;
   text-align: center;
 }
-.content h2 {
-  font-size: 4.8rem;
-}
+
 
 .content button {
   font-size: 1.8rem;
@@ -419,39 +417,60 @@ header .icon {
 }
 
 .carouselpet .card{
-  line-height: 250px;
+  height: 24rem;
+  padding: 1rem;
+  border-radius: 8px;
   text-align: center;
-  color: #fff;
-  font-size: 90px;
-  font-weight: 600;
+  color: #000;
   margin: 20px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   z-index: -10;
+  position: relative;
 }
 
-.carouselpet .card-1{
-  background-color: red;
+/* .owl-carousel .owl-stage-outer{
+  overflow: visible!important;
+  overflow-x: hidden!important;
+    arrumar
+} */
+
+.user-image #user-picture {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  top: -3rem;
+  left: 56%;
+  margin-left: -50px;
+  border-radius: 999rem;
 }
 
-.carouselpet .card-2{
-  background-color: green;
+.content h2 {
+  margin-top: 4rem;
+  font-weight: 800;
+  font-size: 3.8rem;
+  text-align: center;
+  justify-content: center;
 }
 
-.carouselpet .card-3{
-  background-color: blue;
+.content p {
+  margin-top: 4rem;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
 }
 
-.carouselpet .card-4{
-  background-color: yellow;
+.carouselpet 
+.card-1, 
+.card-2, 
+.card-3, 
+.card-4, 
+.card-5, 
+.card-6{
+  background-color: #E5E5E5;
 }
 
-.carouselpet .card-5{
-  background-color: brown;
-}
 
-.carouselpet .card-6{
-  background-color: darkgoldenrod;
-}
 .owl-dots{
   text-align: center;
   margin-top: 4rem;

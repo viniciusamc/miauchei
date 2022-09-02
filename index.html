@@ -198,42 +198,6 @@
             </div>
       </section>
 
-      <div class="wrapper">
-        <div class="carouselpet owl-carousel">
-          <div class="card card-1">A</div>
-          <div class="card card-2">B</div>
-          <div class="card card-3">C</div>
-          <div class="card card-4">D</div>
-          <div class="card card-5">E</div>
-          <div class="card card-6">F</div>
-        </div>
-      </div>
-
-      <script>
-          $(".carouselpet").owlCarousel({
-            margin: 10,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-              0:{
-                items:1,
-                nav: false
-              },
-              600:{
-                items:2,
-                nav: false
-              },
-              1000:{
-                items:3,
-                nav: false
-              },
-            }
-
-          });
-      </script>
-
       <section class="donate">
         <div class="content">
           <img src="src/images/iconsMiauchei/IMG_20220516_082859_009-removebg-preview 1.png" alt="Icone Miauchei">
@@ -244,20 +208,100 @@
 
       <section class="feed">
         <div class="cards-feed">
+         
+        </div>
 
-          <div class="feed-card">
-            <div class="feed-image">
-              <img src="https://github.com/viiniciusgm.png" alt="Foto do usuário">
-              <h2>
-                José Carlos Pace
-              </h2>
-            </div>
-            <div class="feed-content">
-            <p>
-              “Graças ao MiAuchei meu dog foi encontrado!”
-            </p>
+        <div class="wrapper">
+            <div class="carouselpet owl-carousel" id="overflow-carousel">
+              <div class="card card-1">
+                <div class="content">
+
+                  <div class="user-image"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário" id="user-picture">
+                    <h2>Roberto Almeida</h2>
+                    <p>
+                      “Adotei meu cachorro (Ralf) por aqui, muito bom ter essa facilidade pra ajudar os pets abandonados”
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-2">
+                <div class="content">
+
+                  <div class="user-image"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário" id="user-picture">
+                    <h2>Carol</h2>
+                    <p>
+                      “Adotei a o meu gato por aqui!”
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-3">
+                <div class="content">
+
+                  <div class="user-image"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário" id="user-picture">
+                    <h2>Laura Silva</h2>
+                    <p>
+                      “Um ótimo site, super recomendo!”
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card card-4">
+                <div class="content">
+
+                  <div class="user-image"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário" id="user-picture">
+                    <h2>José Carlos Pace</h2>
+                    <p>
+                      “Graças ao MiAuchei meu dog foi encontrado!”
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card card-5">
+                <div class="content">
+
+                  <div class="user-image"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário" id="user-picture">
+                    <h2>Mariana Souza</h2>
+                    <p>
+                      “Que plataforma incrível!”
+                    </p>
+
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
+  
+        <script>
+            $(".carouselpet").owlCarousel({
+              margin: 10,
+              loop: true,
+              // autoplay: true,
+              autoplayTimeout: 2000,
+              autoplayHoverPause: true,
+              responsive: {
+                0:{
+                  items:1,
+                  nav: false
+                },
+                600:{
+                  items:2,
+                  nav: false
+                },
+                1000:{
+                  items:3,
+                  nav: false
+                },
+              }
+  
+            });
+        </script>
         
         <!-- <div class="feed-card">
           <div class="feed-image">
@@ -287,11 +331,6 @@
           </div>
         </div> -->
       </div>
-
-        <div class="feed-arrow">
-          <img src="src/images/svg/arrowLeft.svg" alt="">
-          <img src="src/images/svg/arrowRight.svg" alt="">
-        </div>
       </section>
 
       <section class="details">
