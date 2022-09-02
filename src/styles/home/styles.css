@@ -417,7 +417,7 @@ header .icon {
 }
 
 .carouselpet .card{
-  height: 24rem;
+  height: fit-content;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
@@ -453,7 +453,7 @@ header .icon {
 }
 
 .content p {
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
@@ -525,6 +525,12 @@ header .icon {
   100%{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (min-width:440px){
+  .carouselpet .card{
+    height: 24rem;
   }
 }
 
