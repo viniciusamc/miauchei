@@ -31,13 +31,24 @@ header {
   border-bottom: 1px solid var(--blue);
 }
 
-header img {
+.logoHeader img {
   height: 4rem;
   margin-top: .5rem;
   padding: 0 .8rem;
 }
 
-.menuBar img {
+header .icon img{
+  border-radius: 999rem;
+  height: 4rem;
+  border: 1px solid black;
+}
+
+header .icon {
+  display: flex;
+  align-items: center;
+}
+
+.menuBar {
   cursor: pointer;
 }
 
@@ -78,7 +89,6 @@ header img {
   transform: scale(1.1);
   transition: 100ms;
 }
-
 
 .banner {  
   position: relative;
@@ -263,9 +273,11 @@ header img {
 
 .feed-card{
   position: relative;
-  height: 25rem;
-  width: 40rem;
+  height: 12rem;
+  width: 20rem;
+  padding: 1rem;
   background-color: #E5E5E5;
+  border: none;
 
   display: flex;
   flex-direction: column;
@@ -273,7 +285,7 @@ header img {
   align-items: center;
   align-content: center;
 
-  border: 1px solid black;
+  border: 1px solid var(--blue);
 }
 
 .feed-image img {
@@ -283,19 +295,21 @@ header img {
 
   position: absolute;
   top: -25px;
-  left: 45%;
+  left: 50%;
+  margin-left: -20px;
 }
 
 .feed-image h2 {
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 1.4rem;
   font-weight: 700;
 }
 
 .feed-content p {
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .feed-arrow{
@@ -421,9 +435,33 @@ header img {
   }
 }
 
-@media (max-width: 768px) {
-  #mainSlider .carousel-inner, #mainSlider .carousel-item{
-    height: auto;
+@media (min-width: 768px) {
+  .menuBar {
+    display: none;
   }
 
+  header {
+    display: flex;
+  }
+
+  .menuDesktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .menuDesktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3.6rem;
+  }
+
+  .menuDesktop ul li {
+    text-decoration: none;
+  }
+  .menuDesktop ul li a{
+    color: white;
+    font-size: 2.4rem;
+  }
 }
