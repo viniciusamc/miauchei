@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: var(--light-blue);
+  background-color: var(--brown);
   color: white;
 }
 
@@ -17,7 +17,7 @@ body {
 
 header {
   position: fixed;
-  background-color: var(--light-blue);
+  background-color: #FFF;
   z-index: 2;
   padding: 0 4rem;
 
@@ -103,10 +103,6 @@ header .icon {
 
 .container-fluid {
   padding: 0;
-}
-
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
-  height: 85rem;
 }
 
 .carousel-item img {
@@ -398,7 +394,7 @@ header .icon {
 
 .topDown{
   animation: downTop 400ms;
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px #000 solid;
 }
 
 .leftRight{
@@ -477,7 +473,6 @@ header .icon {
 }
 
 .owl-dot{
-  background-color: red;
   height: 1.5rem;
   width: 4.5rem;
   border-radius: 2rem;
@@ -490,7 +485,7 @@ header .icon {
 
 .owl-dot:hover,
 .owl-dot.active{
-  background-color: var(--brown);
+  background-color: var(--blue)!important;
 }
 
 @keyframes downTop {
@@ -530,7 +525,7 @@ header .icon {
 
 @media (min-width:440px){
   .carouselpet .card{
-    height: 24rem;
+    height: 26rem;
   }
 }
 
@@ -565,12 +560,19 @@ header .icon {
   .menuDesktop ul li {
     text-decoration: none;
   }
+
   .menuDesktop ul li a{
-    color: white;
-    font-size: 2.4rem;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
   }
 
   header .icon{
     display: flex;
+  }
+
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 85rem;
   }
 }
