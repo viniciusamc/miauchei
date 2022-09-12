@@ -10,6 +10,7 @@ function toggleMenu() {
   header.classList.toggle('activeMenu')
   nav.classList.toggle('hide')
   body.classList.toggle('overflow')
+  logoHeader.classList.remove("hide")
 }
 
 function onScroll() {

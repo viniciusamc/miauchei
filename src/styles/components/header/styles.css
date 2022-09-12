@@ -1,0 +1,126 @@
+@import '../../../../global.css';
+
+header {
+  position: fixed;
+  background-color: #FFF;
+  z-index: 2;
+  padding: 0 4rem;
+
+  width: 100vw;
+  height: 6rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--blue);
+}
+
+.logoHeader img {
+  height: 4rem;
+  margin-top: .5rem;
+  padding: 0 .8rem;
+}
+
+header .icon img{
+  border-radius: 999rem;
+  height: 4rem;
+  border: 1px solid black;
+}
+
+header .icon {
+  display: none;
+  align-items: center;
+}
+
+.menuBar {
+  cursor: pointer;
+  display: flex;
+  margin-top: .6rem;
+}
+
+.menuBar img{
+  display: flex;
+  height: 4rem;
+}
+
+.activeMenu{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--brown);
+}
+
+
+.menuMobile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.menuMobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.6rem;
+  list-style: none;
+}
+
+.menuMobile ul li a{
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  border: 1px solid white;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.menuMobile ul li:hover{
+  transform: scale(1.1);
+  transition: 100ms;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menuBar, .menuBar img{
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .menuDesktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .menuDesktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3.6rem;
+  }
+
+  .menuDesktop ul li {
+    text-decoration: none;
+  }
+
+  .menuDesktop ul li a{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  header .icon{
+    display: flex;
+  }
+}
