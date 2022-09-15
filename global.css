@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: 'Raleway', sans-serif;
 }
 
@@ -15,12 +14,14 @@
   --brown: #BE935B;
   --btn-brown: #925F20;
 	--btn-fill: #81541c;
+  --background-blue: #8AACD4;
 
   font-size: 62.5%;
 }
 
 body {
-	font-size: 1.6rem;
+  background-color: #E9E9E9;
+  overflow-x:hidden; /*não scrolar para o lado*/
 }
 
 .sr-only {

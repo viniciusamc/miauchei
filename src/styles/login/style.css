@@ -139,11 +139,6 @@ a:hover {
   z-index: 1;
 }
 
-.btn-submit a {
-  color: #fff;
-  font-size: 1.6rem;
-}
-
 .btn-submit:hover, .col-2 button:hover{
   transform: scale(1.01);
   background-color: var(--btn-fill);

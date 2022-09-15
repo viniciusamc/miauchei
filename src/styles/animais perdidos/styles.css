@@ -1,4 +1,19 @@
-@import '../../../../global.css';
+@import '../../../global.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--brown);
+  color: white;
+}
+
+.overflow{
+  overflow-y: hidden;
+}
 
 header {
   position: fixed;
@@ -15,7 +30,7 @@ header {
 
   border-bottom: 1px solid var(--blue);
 }
-
+/*<===============MENU=============>*/
 .logoHeader img {
   height: 4rem;
   margin-top: .5rem;
@@ -36,7 +51,7 @@ header .icon {
 .menuBar {
   cursor: pointer;
   display: flex;
-  margin-top: .6rem;
+  align-items: center;
 }
 
 .menuBar img{
@@ -47,7 +62,6 @@ header .icon {
 .activeMenu{
   width: 100vw;
   height: 100vh;
-  background-color: var(--brown);
 }
 
 
@@ -82,14 +96,77 @@ header .icon {
   transform: scale(1.1);
   transition: 100ms;
 }
+/*<===============================>*/
 
-.hide {
-  display: none;
+#anunciar{
+  font-size: 20px;
+  color: #FFF;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 4rem;
 }
 
-@media (max-width: 768px) {
-  .menuDesktop {
-    display: none;
+.owl-dot{
+  height: 1.5rem;
+  width: 4.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+  margin: 0 .5rem;
+  border: 2px solid var(--blue)!important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active{
+  background-color: var(--blue)!important;
+}
+
+@keyframes downTop {
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topDown {
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width:440px){
+  .carouselpet .card{
+    height: 26rem;
+  }
+}
+
+@media (min-width:1200px){
+  .pets-cards {
+    flex-direction: row;
   }
 }
 
@@ -128,5 +205,9 @@ header .icon {
 
   header .icon{
     display: flex;
+  }
+
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 85rem;
   }
 }

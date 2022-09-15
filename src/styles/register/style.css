@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--blue);
+  background-color: var(--color-brown_100);
 }
 
 .decoration{
@@ -132,7 +132,6 @@ a{
   border-radius: 8px;
   background-color: var(--btn-brown);
   margin: 2rem 0;
-  color: #fff;
   cursor: pointer;
 }
 
