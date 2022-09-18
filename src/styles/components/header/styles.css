@@ -50,7 +50,6 @@ header .icon {
   background-color: var(--brown);
 }
 
-
 .menuMobile {
   display: flex;
   align-content: center;
@@ -86,6 +85,16 @@ header .icon {
 .hide {
   display: none;
 }
+
+.icon {
+  color: black;
+  cursor: pointer;
+}
+
+#loginRegister {
+  cursor: pointer!important;
+}
+
 
 @media (max-width: 768px) {
   .menuDesktop {
@@ -128,5 +137,6 @@ header .icon {
 
   header .icon{
     display: flex;
+    cursor: pointer;
   }
 }

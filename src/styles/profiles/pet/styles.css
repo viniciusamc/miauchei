@@ -3,7 +3,7 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--brown);
+  background-color: #BE935B!important;
 }
 
 main {
@@ -23,7 +23,7 @@ main {
 .profile {
   width: 100%;
   max-width: 53rem;
-  height: 63rem;
+  height: 62rem;
   background-color: var(--blue);
   border-radius: .8rem;
 
@@ -46,8 +46,8 @@ main {
   background-image: url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=394&q=80');
   background-size: cover;
 
-  height: 26rem;
-  width: 26rem;
+  height: 25rem;
+  width: 25rem;
   border-radius: 999rem;
 }
 
@@ -98,4 +98,88 @@ main {
 
 .find-pet:hover{
   background-color: rgb(221, 221, 221);
+}
+
+table {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 2rem;
+  max-width: 70rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: .8rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+table thead {
+  border-bottom: 1px solid #000;
+  padding-bottom: .5rem;
+
+  width: 100%;
+  max-width: 65rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+table tbody {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+table tbody tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+table tbody tr th, table tbody tr td {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+table tbody tr th span, table tbody tr td span, table tbody tr td {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.description {
+  display: flex;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: .8rem;
+  max-width: 70rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.description-content h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  text-align: start;
+}
+
+.description-content textarea {
+  padding: 1rem;
+  resize: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.description-content textarea::placeholder {
+  font-weight: 500;
 }
