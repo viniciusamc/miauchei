@@ -13,6 +13,15 @@ main {
 .page {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.side {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .editor{
@@ -98,6 +107,13 @@ main {
 
 .find-pet:hover{
   background-color: rgb(221, 221, 221);
+}
+
+.features {
+  display: flex;
+  width: 100%;
+  
+  justify-content: center;
 }
 
 table {
