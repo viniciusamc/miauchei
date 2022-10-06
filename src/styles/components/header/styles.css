@@ -1,7 +1,7 @@
 @import '../../../../global.css';
 
 header {
-  position: fixed;
+  position: relative;
   background-color: #FFF;
   z-index: 2;
   padding: 0 4rem;
@@ -14,6 +14,10 @@ header {
   justify-content: space-between;
 
   border-bottom: 1px solid var(--blue);
+}
+
+.headerFixed{
+  position: fixed;
 }
 
 .logoHeader img {
@@ -94,7 +98,6 @@ header .icon {
 #loginRegister {
   cursor: pointer!important;
 }
-
 
 @media (max-width: 768px) {
   .menuDesktop {

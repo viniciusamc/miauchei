@@ -13,6 +13,10 @@ function toggleMenu() {
 }
 
 function onScroll() {
+  if(scrollY > 65){
+    header.classList.add("headerFixed")
+  }
+
   if (scrollY > 114) {
     logo.classList.add('hide')
     logoHeader.classList.add('topDown')

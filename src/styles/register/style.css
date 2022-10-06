@@ -26,7 +26,7 @@ form{
   background-color: var(--brown);
   width: 100vw;
   max-width: clamp(26rem, 26rem + 15vw, 44rem);
-  height: clamp(42rem, 42 rem + 15vw, 53rem);
+  height: clamp(44rem, 44rem + 15vw, 55rem);
   border-radius: 8px;
   padding: .5rem 4rem 4rem; 
 
@@ -73,17 +73,21 @@ fieldset {
   text-align: center;
 }
 
+.col-2 {
+  display: flex;
+  gap: 1rem;
+}
+
 .input-wrapper input {
   height: 5rem;
   width: 100%;
-  max-width: 30rem;
   padding: .5rem;
 
   border-radius: 8px;
   border: none;
 }
 
-.input div:nth-child(1) input{
+.input div:nth-child(1) input, #lastName{
   background-image: url('../../images/nameInput.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -92,6 +96,22 @@ fieldset {
 }
 
 .input div:nth-child(2) input{
+  background-image: url('../../images/svg/phone-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input div:nth-child(3) input{  
+  background-image: url('../../images/svg/id-card-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input div:nth-child(4) input{  
   background-image: url('../../images/svg/email.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -99,7 +119,7 @@ fieldset {
   background-size: 1.6rem;
 }
 
-.input div:nth-child(3) input, .input div:nth-child(4) input {
+.input div:nth-child(5) input{
   background-image: url('../../images/lockSignUp.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;

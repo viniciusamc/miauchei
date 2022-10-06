@@ -80,7 +80,7 @@ fieldset {
 }
 
 .input div:nth-child(1) input{
-  background-image: url('../../images/nameInput.svg');
+  background-image: url('../../images/svg/email.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
   padding-left: 3rem;
