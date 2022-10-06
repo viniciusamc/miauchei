@@ -219,6 +219,8 @@ header .icon {
   height: 100%;
   max-height: 30rem;
   margin: 0 auto;
+  object-fit: cover;
+  border-radius: .8rem;
 }
 
 .pet-card:hover{
@@ -243,10 +245,10 @@ header .icon {
   background-color: transparent;
   padding: 1rem 5rem;
   border-radius: 999rem;
-  border: 1px solid #fff;
+  border: 2px solid #000;
   margin: 3rem 0;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   z-index: 1;
   transition: all 0.3s ease;
   position: relative;
@@ -260,13 +262,13 @@ header .icon {
  height: 100%;
  top: 0;
  right: 0;
- z-index: -1;
- background: #fff;
+ z-index: -1; 
+ background: #012f46;
  border-radius: 999rem;
  transition: all 0.3s ease;
 }
 .content button:hover {
- color: var(--background-blue);
+ color: #fff;
 }
 .content button:hover:after {
  left: 0;

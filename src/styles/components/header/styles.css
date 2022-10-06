@@ -1,7 +1,8 @@
 @import '../../../../global.css';
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
   background-color: #FFF;
   z-index: 2;
   padding: 0 4rem;
