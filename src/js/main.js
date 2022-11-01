@@ -14,7 +14,7 @@ function toggleMenu() {
 
 function onScroll() {
   console.log(scrollY);
-  if (scrollY > 320) {
+  if (scrollY > 115) {
     logo.classList.remove('hide')
     logoHeader.classList.remove('hide')
   } else {

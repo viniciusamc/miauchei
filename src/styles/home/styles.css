@@ -102,11 +102,10 @@ header .icon {
 }
 .content_home{
   width: 100vw;
-  justify-content: center;
+  justify-content: space-around;
     display: flex;
     flex-direction:row;
     top: 5rem;
-    left: 2rem;
     position: absolute;
 }
 .text_home{
@@ -117,6 +116,21 @@ header .icon {
 .text_home img {
   width: 8rem;
 }
+
+.top-icon-banner{
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-icon-banner img{
+  width: 12rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .text_home{
     margin-top: 15%;
@@ -161,11 +175,7 @@ header .icon {
 }
 
 .pet-card {
-  padding: 1rem;
   background-color: white;
-  height: 50rem;
-  width: 95%;
-  max-width: 35rem;
   margin: 0 auto;
   border-radius: .8rem;
   box-shadow: 2px 4px 12px 0px #00000080;
@@ -194,19 +204,42 @@ header .icon {
 }
 
 .image-card {
-  text-align: center;
-  width: 100%;
+  width: 45rem;
   height: 60%;
 }
 
 .image-card img {
   width: 100%;
-  max-width: 30rem;
   height: 100%;
   max-height: 30rem;
-  margin: 0 auto;
+  border-radius: 12px 12px 0 0;
   object-fit: cover;
-  border-radius: .8rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.tags .pet-tag, .tags .situacao-tag, .tags .data-tag{
+  font-size: 2rem;
+  padding: 0.3rem 2rem;
+  font-weight: 600;
+  background-color: #C5DDE5;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.desc-pet{
+  margin: 2rem;
+}
+
+.desc-pet h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .pet-card:hover{
