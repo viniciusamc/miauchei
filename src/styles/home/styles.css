@@ -242,6 +242,10 @@ header .icon {
   font-weight: 700;
 }
 
+.desc-pet p {
+  opacity: .8;
+}
+
 .pet-card:hover{
   transform: scale(1.1);
   filter: saturate(1.5);
