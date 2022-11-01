@@ -88,77 +88,63 @@ header .icon {
 }
 
 /*<===================================>*/
-/*<============SLIDESHOW==============>*/
-
-.banner {  
-  position: relative;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-.carousel-item img {
-  width: fit-content;
-}
-
-
-#mainSlider .carousel-caption h2 {
-  font-size: 5rem;
-}
-
-.banner .logo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: absolute;
-  top: 5rem;
-  left: 2rem;
-}
-
+/*<============FRENTE DO SITE==============>*/
 .logo img {
   height: 10rem;
-  width: 10rem;
+  width: 100%;
   background-color: transparent;
 }
-
 .logo h1 {
-  font-size: 1.8rem;
-}
-
-.search img {
-  height: 4rem;
-
+  font-size: clamp(0.5rem,2vw,1.8rem);
   position: absolute;
-  top: 7.5rem;
-  right: 4.5rem;
+  margin-top: -20px;
+  
+}
+.content_home{
+  width: 100vw;
+  justify-content: center;
+    display: flex;
+    flex-direction:row;
+    top: 5rem;
+    left: 2rem;
+    position: absolute;
+}
+.text_home{
+  margin-left: 5%;
+  margin-top:10%;
 }
 
-.arrowLeft img{
-  height: 4rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 3rem;
+.text_home img {
+  width: 8rem;
 }
-
-.arrowRight img{
-  height: 4rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 3rem;
+@media only screen and (min-width: 1000px) {
+  .text_home{
+    margin-top: 15%;
+  }
 }
-
-.hide {
-  display: none;
+#title_home{
+  color:#334B4E;
+  font-weight: bold;
+  font-size: clamp(1rem,5vw,3rem);
 }
-
+#sub_home{
+  color: rgb(70, 68, 68);
+  font-size: clamp(0.5rem,3vw,2rem);
+}
+.img_home{
+  float: left;
+  padding-right: 30%;
+  overflow: hidden;
+}
 /*<=========EM DESTAQUE===========>*/
 
 .highlights {
-  margin: 20rem auto;
+  margin-top: 70%;
+}
+@media only screen and (min-width: 1000px) {
+  .highlights{
+    margin-top: 60%;
+  }
 }
 
 .highlights h2 {
@@ -231,13 +217,39 @@ header .icon {
 }
 
 /*<=================================================>*/
+/*<=================ANÚNCIOS========================>*/
+
+.anuncio {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+.img_anuncio{
+    position: relative;
+    width: 100%;
+    top: 5rem;
+    
+}
+/*<=================================================>*/
 /*<======AREA DE DOAÇÃO (Faça a diferença...)=======>*/
 
 .donate {
-  margin-top: 16rem;
+  margin-top: 8rem;
   text-align: center;
 }
+#fundo{
+  width: 100%; 
+}
+.content{
+  margin-top: -40%;
+}
 
+@media only screen and (max-width: 700px) {
+  .content{
+    margin-top:-50%;
+  }
+}
 .content button {
   font-size: 1.8rem;
   font-weight: 500;
@@ -281,7 +293,6 @@ header .icon {
 /*<===========================================>*/
 /*<=================FEED======================>*/
 
-
 .container{
   margin-top: 10rem;
 }
@@ -319,7 +330,7 @@ header .icon {
 }
 .testimonial-text p{
   margin-top: 8%;
-  font-size: 150%;
+  font-size: 100%;
 }
 /*-----foto de perfil-----*/
 .testimonial-carousel .owl-item .testimonial-item img {
@@ -331,7 +342,7 @@ header .icon {
 }
 .testimonial-carousel .owl-item.center .testimonial-item img {
   transform: scale(1.4);
-
+  transition: ease 0.8s;
 }
 
 /*--------direcionais (<) (>)----------*/
@@ -370,33 +381,24 @@ header .icon {
 .details {
   position: relative;
 }
-
-.background-section{
-  width: clamp(32rem, 32rem + 100vw, 100vw);
-  position: relative;  
-
+.details svg{
+  width: 100%;
 }
-
-.details-section {
+.details_section {
   display: flex;
   align-content: center;
   justify-content: center;
   gap: 8rem;
 }
-
-.detailOne, .detailTwo, .detailThree {
-  position: absolute;
-  top: 30%; /* mudar quando colocar a query 756 */
-}
-
 .detailOne{
-  left: 8rem;
+  border: 2px solid #67B8E5;
 }
-
+.detailTwo
 .detailThree{
-  right: 6rem;
+  border: 2px solid black;
 }
 
+/*
 .detailOne, .detailTwo, .detailThree {
   position: absolute;
   display: flex;
@@ -405,7 +407,7 @@ header .icon {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+}*/
 
 .detailOne h2, .detailTwo h2, .detailThree h2{
   font-size: clamp(2rem,5vw,4rem);
@@ -420,9 +422,6 @@ header .icon {
   color: #fff;
 }
 
-.detailOne img, .detailTwo img, .detailThree img{
-  width: 10rem;
-}
 
 /*<========================================================>*/
 
