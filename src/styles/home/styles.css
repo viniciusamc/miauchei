@@ -221,7 +221,11 @@ header .icon {
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+
+  width: 95%;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
 }
 
 .tags .pet-tag, .tags .situacao-tag, .tags .data-tag{
@@ -235,6 +239,8 @@ header .icon {
 
 .desc-pet{
   margin: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .desc-pet h1 {
@@ -246,10 +252,25 @@ header .icon {
   opacity: .8;
 }
 
-.pet-card:hover{
+.desc-pet button{
+  width: 90%;
+  padding: 1rem;
+  margin: 1.6rem auto;
+
+  border-radius: 999rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.desc-pet button:hover{
   transform: scale(1.1);
-  filter: saturate(1.5);
   transition-duration: 300ms;
+}
+
+.pet-card:hover{
+  transform: scale(1.01);
+  filter: saturate(1.5);
+  transition-duration: 100ms;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
