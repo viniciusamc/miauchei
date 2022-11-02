@@ -89,16 +89,20 @@ header .icon {
 
 /*<===================================>*/
 /*<============FRENTE DO SITE==============>*/
+.logo{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+}
+
 .logo img {
-  height: 10rem;
-  width: 100%;
+  width: clamp(4vw, 3vw + 3vw, 10vw);
   background-color: transparent;
 }
 .logo h1 {
-  font-size: clamp(0.5rem,2vw,1.8rem);
-  position: absolute;
-  margin-top: -20px;
-  
+  font-size: clamp(0.5rem,2vw,1.8rem);  
 }
 .content_home{
   width: 100vw;
@@ -183,6 +187,8 @@ header .icon {
   flex-direction: column;
   align-content: center;
   color: black;
+  width: 90vw;
+  max-width: 45rem;
 }
 
 .pet-card h1 {
@@ -204,7 +210,8 @@ header .icon {
 }
 
 .image-card {
-  width: 45rem;
+  width: 90vw;
+  max-width: 45rem;
   height: 60%;
 }
 
@@ -219,13 +226,29 @@ header .icon {
 .tags {
   display: flex;
   gap: 1rem;
-  align-items: center;
-  justify-content: center;
 
   width: 95%;
   padding: 1rem;
   border-bottom: 1px solid #000;
   margin: 0 auto;
+
+  overflow: scroll;
+}
+
+@media (min-width: 500px) {
+  .tags {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  
+    width: 95%;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+  
+    overflow: hidden;
+  }
 }
 
 .tags .pet-tag, .tags .situacao-tag, .tags .data-tag{
@@ -235,6 +258,10 @@ header .icon {
   background-color: #C5DDE5;
   border-radius: 1rem;
   gap: 1rem;
+}
+
+.situacao-tag{
+  color: #BF0202;
 }
 
 .desc-pet{
@@ -438,48 +465,34 @@ header .icon {
 
 .details {
   position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
-.details svg{
-  width: 100%;
-}
+
 .details_section {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
   display: flex;
   align-content: center;
   justify-content: center;
   gap: 8rem;
-}
-.detailOne{
-  border: 2px solid #67B8E5;
-}
-.detailTwo
-.detailThree{
-  border: 2px solid black;
+  width: 50vw;
+  margin: 0 auto;
 }
 
-/*
-.detailOne, .detailTwo, .detailThree {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}*/
-
-.detailOne h2, .detailTwo h2, .detailThree h2{
-  font-size: clamp(2rem,5vw,4rem);
-  margin: .2rem 0 1rem 0;
+.details_section h2 {
   color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
-.detailOne p, .detailTwo p, .detailThree p{
-  font-size: clamp(5px,2vw,50px);
-  width: 20rem;
-  justify-content: center;
+.details_section p{
   color: #fff;
+  font-size: 2rem;
 }
-
 
 /*<========================================================>*/
 
