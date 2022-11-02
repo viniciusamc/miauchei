@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>miauchei</title>
+  <title>Miauchei - Registro</title>
   
   <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
   
@@ -31,7 +31,7 @@
               <label for="name" class="sr-only">Nome</label>
               <input type="text" id="name" name="nome" placeholder="Nome">
             </div>
-<!-- 
+          <!-- 
           <div class="input-wrapper">
             <label for="email" class="sr-only">Telefone</label>
             <input type="phone" id="telefone" name="telefone" placeholder="Telefone">
@@ -48,8 +48,13 @@
           </div>
 
           <div class="input-wrapper">
-            <label for="confirmPassword" class="sr-only">Senha</label>
+            <label for="Password" class="sr-only">Senha</label>
             <input type="password" id="password" placeholder="Senha" name="senha">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="confirmPassword" class="sr-only">Confirmar senha</label>
+            <input type="password" id="confirm-password" placeholder="Confirmar senha" name="confirmar-senha">
           </div>
 
         </div>

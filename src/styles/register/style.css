@@ -1,10 +1,9 @@
-@import '../../../global.css';
 
 body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--color-brown_100);
+  background-color: #E9E9E9;
 }
 
 .decoration{
@@ -96,22 +95,6 @@ fieldset {
 }
 
 .input div:nth-child(2) input{
-  background-image: url('../../images/svg/phone-solid.svg');
-  background-repeat: no-repeat;
-  background-position: center left 1rem;
-  padding-left: 3rem;
-  background-size: 1.6rem;
-}
-
-.input div:nth-child(3) input{  
-  background-image: url('../../images/svg/id-card-solid.svg');
-  background-repeat: no-repeat;
-  background-position: center left 1rem;
-  padding-left: 3rem;
-  background-size: 1.6rem;
-}
-
-.input div:nth-child(4) input{  
   background-image: url('../../images/svg/email.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -119,8 +102,8 @@ fieldset {
   background-size: 1.6rem;
 }
 
-.input div:nth-child(5) input{
-  background-image: url('../../images/lockSignUp.svg');
+.input div:nth-child(3) input, .input div:nth-child(4) input{  
+  background-image: url('../../images/svg/lock-solid.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
   padding-left: 3rem;
