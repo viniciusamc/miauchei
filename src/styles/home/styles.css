@@ -265,7 +265,7 @@ header .icon {
 }
 
 .desc-pet{
-  margin: 2rem;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
 }

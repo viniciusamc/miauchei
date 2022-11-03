@@ -37,3 +37,7 @@ body {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.hide{
+  display: none;
+}
