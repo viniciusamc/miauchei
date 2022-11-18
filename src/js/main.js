@@ -2,19 +2,19 @@ const fecharPopup = document.querySelector('.close-window');
 const logoHeader = document.querySelector('.logoHeader')
 const anunciar = document.querySelector('.anunciar');
 const popup = document.querySelector('.pop-dialog')
-const btnMenu = document.querySelector('.menuBar')
 const liMobile = document.querySelectorAll('li')
 const header = document.querySelector('header')
 const logo = document.querySelector('.logo')
 const body = document.querySelector('body')
+
+const btnMobile = document.querySelector('#btn-mobile')
 const nav = document.querySelector('nav')
 
-
-function toggleMenu() {
-  header.classList.toggle('activeMenu')
-  nav.classList.toggle('hide')
-  body.classList.toggle('overflow')
+function toggleMenu(){
+  nav.classList.toggle("active");
 }
+
+btnMobile.addEventListener('click', toggleMenu)
 
 function togglePopUp(){
   popup.showModal();
@@ -35,6 +35,5 @@ function onScroll() {
   }
 };
 
-btnMenu.addEventListener('click', toggleMenu);
 anunciar.addEventListener('click', togglePopUp);
 fecharPopup.addEventListener('click',closeWindow);

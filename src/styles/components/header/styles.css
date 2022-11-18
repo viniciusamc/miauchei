@@ -1,145 +1,160 @@
-
 header {
   position: fixed;
   top: 0;
-  background-color: #FFF;
-  z-index: 2;
-  padding: 0 4rem;
-
-  width: 100vw;
-  height: 6rem;
-
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid var(--blue);
-}
-
-.headerFixed{
-  position: fixed;
-}
-
-.logoHeader img {
-  height: 4rem;
-  margin-top: .5rem;
-  padding: 0 .8rem;
-}
-
-header .icon img{
-  border-radius: 999rem;
-  height: 4rem;
-  border: 1px solid black;
-}
-
-header .icon {
-  display: none;
-  align-items: center;
-}
-
-.menuBar {
-  cursor: pointer;
-  display: flex;
-  margin-top: .6rem;
-}
-
-.menuBar img{
-  display: flex;
-  height: 4rem;
-}
-
-.activeMenu{
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--brown);
-}
-
-.menuMobile {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.menuMobile ul {
+  box-sizing: border-box;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  height: 5.6rem;
+}
+
+header .header-content {
+  display: flex;
   align-items: center;
-  gap: 4.6rem;
-  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 8rem;
 }
 
-.menuMobile ul li a{
-  color: #fff;
-  font-size: 1.8rem;
+#logo img{
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+#logo img:hover, ul li a:hover{
   text-decoration: none;
-
-  border: 1px solid white;
-  border-radius: 3rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
+  transform: translateY(-4px);
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+  transition-duration: .3s;
 }
 
-.menuMobile ul li:hover{
-  transform: scale(1.1);
-  transition: 100ms;
+ul {
+  list-style: none;
+
+  display: flex;
+  align-items: stretch;
+  text-align: center;
+  padding-top: 2vh;
+  gap: 1.6rem;
 }
 
-.hide {
+a{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: .5rem;
+}
+
+#btn-mobile {
   display: none;
-}
-
-.icon {
-  color: black;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-#loginRegister {
-  cursor: pointer!important;
+#btn-mobile img{
+  width: 4rem;
+  height: 2.5rem;
 }
 
-@media (max-width: 768px) {
-  .menuDesktop {
-    display: none;
-  }
+#profile-pic {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1000rem;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .menuBar, .menuBar img{
-    display: none;
+.profile-header {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;  
+}
+
+.profile-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-text span:nth-child(1){
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.profile-text span:nth-child(2){
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;  
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  #btn-mobile {
+    display: block;
   }
 
-  header {
-    display: flex;
+  .header-content {
+    padding: 0rem .8rem!important;
   }
 
-  .menuDesktop {
+  nav {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;  
+  }
+
+  #logo{
+    position: absolute;
+    top: .5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
   }
   
-  .menuDesktop ul {
+
+  ul {
+    display: block;
+    position: absolute;
+    height: 0;
+    top: 7rem;
+    width: 100vw;
+    right: 0;
+    transition: 600ms;
+    background-color: #fff;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  nav.active ul{
     display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 3.6rem;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding-top: 2vh;
+    
+    height: calc(100vh - 7rem);
+    visibility: visible;
   }
 
-  .menuDesktop ul li {
-    text-decoration: none;
-  }
-
-  .menuDesktop ul li a{
-    color: black;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  header .icon{
-    display: flex;
-    cursor: pointer;
+  #profile-pic {
+    display: none;
   }
 }
