@@ -1,4 +1,3 @@
-
 body {
   min-height: 100vh;
   display: grid;
@@ -21,11 +20,9 @@ body {
 }
 
 form{
-  margin-top: -2rem;
   background-color: var(--brown);
   width: 100vw;
   max-width: clamp(26rem, 26rem + 15vw, 44rem);
-  height: clamp(44rem, 44rem + 15vw, 55rem);
   border-radius: 8px;
   padding: .5rem 4rem 4rem; 
 
@@ -45,9 +42,21 @@ form > div:nth-child(1){
 }
 
 form legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
   text-align: center;
   margin-bottom: 1rem;
   padding-top: .8rem;
+
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+form legend img {
+  width: 16rem;
 }
 
 fieldset {
@@ -86,15 +95,7 @@ fieldset {
   border: none;
 }
 
-.input div:nth-child(1) input, #lastName{
-  background-image: url('../../images/nameInput.svg');
-  background-repeat: no-repeat;
-  background-position: center left 1rem;
-  padding-left: 3rem;
-  background-size: 1.6rem;
-}
-
-.input div:nth-child(2) input{
+.input div:nth-child(1) input{
   background-image: url('../../images/svg/email.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -102,7 +103,23 @@ fieldset {
   background-size: 1.6rem;
 }
 
-.input div:nth-child(3) input, .input div:nth-child(4) input{  
+.input div:nth-child(2) input{
+  background-image: url('../../images/nameInput.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input div:nth-child(3) input{  
+  background-image: url('../../images/svg/phone-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input div:nth-child(4) input, .input div:nth-child(5) input {
   background-image: url('../../images/svg/lock-solid.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;

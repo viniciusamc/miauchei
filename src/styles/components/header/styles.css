@@ -6,7 +6,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 5.6rem;
+  height: 6rem;
 }
 
 header .header-content {
@@ -14,6 +14,7 @@ header .header-content {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 7rem;
   background-color: #fff;
   padding: 0 8rem;
 }
@@ -117,23 +118,22 @@ nav {
     align-items: center;  
   }
 
-  #logo{
+  #logo img{
     position: absolute;
-    top: .5rem;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
   }
   
-
   ul {
     display: block;
     position: absolute;
-    height: 0;
-    top: 7rem;
+    height: 1rem;
+    top: 6rem;
     width: 100vw;
     right: 0;
     transition: 600ms;
@@ -146,15 +146,11 @@ nav {
   nav.active ul{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
     padding-top: 2vh;
     
     height: calc(100vh - 7rem);
     visibility: visible;
-  }
-
-  #profile-pic {
-    display: none;
   }
 }

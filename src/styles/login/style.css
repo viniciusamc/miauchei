@@ -1,9 +1,8 @@
-
 body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--blue);
+  background-color: var(--bg);
 }
 
 .decoration{
@@ -21,11 +20,49 @@ body {
 }
 
 main {
-  position: relative;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
 }
 
+
+.form-txt {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 16rem;
+  height: 16rem;
+}
+
+.logo h1 {
+  font-size: 3.2rem;
+}
+
+.form-txt h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-txt h2 {
+    margin-bottom: 2rem;  
+  }
+}
 form{
-  margin-top: -2rem;
   background-color: var(--brown);
   width: 100vw;
   max-width: clamp(26rem, 26rem + 15vw, 44rem);
@@ -233,4 +270,6 @@ a:hover {
   .input-wrapper input {
     height: 5rem;
   }
+
+
 }

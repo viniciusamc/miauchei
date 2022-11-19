@@ -14,12 +14,6 @@ body {
   overflow-y: hidden;
 }
 
-/*  */
-
-/*<===============MENU=============>*/
-
-
-/*<===================================>*/
 /*<============FRENTE DO SITE==============>*/
 .logo{
   margin-top: 2rem;
@@ -36,14 +30,15 @@ body {
 .logo h1 {
   font-size: clamp(0.5rem,2vw,1.8rem);  
 }
+
 .content_home{
   width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: space-around;
-    display: flex;
-    flex-direction:row;
-    top: 5rem;
-    position: absolute;
+  top: 5rem;
 }
+
 .text_home{
   margin-left: 5%;
   margin-top:10%;
@@ -72,24 +67,46 @@ body {
     margin-top: 15%;
   }
 }
+
 #title_home{
-  color:#334B4E;
+  color:#000;
   font-weight: bold;
-  font-size: clamp(1rem,5vw,3rem);
+  font-size: clamp(1rem,5vw,4rem);
 }
 #sub_home{
-  color: rgb(70, 68, 68);
-  font-size: clamp(0.5rem,3vw,2rem);
+  color: #000;
+  font-size: clamp(0.5rem,3vw,3rem);
 }
-.img_home{
-  float: left;
-  padding-right: 30%;
-  overflow: hidden;
+
+#sub_home span {
+  margin-left: 4rem;
 }
+
+#sub_home div {
+  width: 1rem;
+  height: 1rem;
+  animation: handleAnimation 1s infinite alternate-reverse;
+  transform-origin: 70% 250%;
+}
+
+.img_home {
+  width: 100% ;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img_home img{
+  position: absolute;
+  top: -5vh;
+  right: -5vw;
+  width: clamp(20rem, 20rem + 40vw, 80rem);
+}
+
 /*<=========EM DESTAQUE===========>*/
 
 .highlights {
-  margin-top: 70%;
+  margin-top: 60vh;
 }
 @media only screen and (min-width: 1000px) {
   .highlights{
@@ -523,7 +540,13 @@ body {
   }
 }
 
-@media (max-width: 920px) {
+@keyframes handleAnimation {
+  0% {
+    rotate: 40deg;
+  }
 
+  100% {
+    rotate: 60deg;  
+  }
+  
 }
-
