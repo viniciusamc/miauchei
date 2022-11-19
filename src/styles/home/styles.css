@@ -97,22 +97,14 @@ body {
 }
 
 .img_home img{
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+
   position: absolute;
-  top: -5vh;
-  right: -5vw;
-  width: clamp(20rem, 20rem + 40vw, 80rem);
 }
 
 /*<=========EM DESTAQUE===========>*/
-
-.highlights {
-  margin-top: 60vh;
-}
-@media only screen and (min-width: 1000px) {
-  .highlights{
-    margin-top: 60%;
-  }
-}
 
 .highlights h2 {
   font-size: 2rem;
@@ -487,7 +479,7 @@ body {
   }
 }
 
-@media (min-width:1000px){
+@media (min-width:1400px){
   .pets-cards {
     flex-direction: row;
   }
@@ -550,3 +542,139 @@ body {
   }
   
 }
+.header-wave {
+  position:relative;
+  text-align:center;
+  background: #E9E9E9;
+  color:white;
+  margin-top: 10vh;
+}
+
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.details-waves {
+  background-color: #024060;
+  width: 100vw;
+  padding-top: 10rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.waves-card {
+  padding: 5rem 3rem;
+  border: 1px solid #67B8E5;
+  width: 90vw;
+  max-width: 40rem;
+  border-radius: .8rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;  
+}
+
+.waves-card img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+
+  position: absolute;
+  top: -3rem;
+}
+
+.waves-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.waves-card-text h1 { 
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.waves-card-text p {
+  text-align: initial;
+  font-size: 1.8rem;
+}
+
+.waves-card:hover {
+  transform: translateY(-1.5rem);
+  transition-duration: 300ms;
+}
+
+@media (max-width: 1290px) {
+  .details-waves {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+
+  }
+}
+
