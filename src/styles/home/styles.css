@@ -1,3 +1,5 @@
+@import '../../../global.css';
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
 }
 
 body {
+  background-color: var(--background-blue);
   color: black;
   font-size: 1.6rem;
 }
@@ -12,16 +15,54 @@ body {
 .overflow{
   overflow-y: hidden;
 }
+h2{
+  font-weight:  bold;
+}
+.code7-boteria-bot-widget-chat-messages {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-top: 46px !important;
+  font-size: 15px;
+  margin-top: 10px !important;
+  margin-bottom: 0px;
+  padding-right: 0;
+  padding-left: 0;
+}
+@media screen and (min-width: 751px){
+.code7-boteria-bot-widget-chat-wrap {
+    border-radius: 14px !important;
+}}
+#code7-boteria-bot-widget-chat-header {
+  padding: 0;
+}
+/*  */
 
+/*<===================================>*/
 /*<============FRENTE DO SITE==============>*/
+.logo{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+}
 
+.logo img {
+  width: clamp(4vw, 3vw + 3vw, 10vw);
+  background-color: transparent;
+}
+.logo h1 {
+  font-size: clamp(0.5rem,2vw,1.8rem);  
+}
 .content_home{
   width: 100vw;
   justify-content: space-around;
-    display: flex;
-    flex-direction:row;
-    top: 5rem;
-    position: absolute;
+  display: flex;
+  flex-direction:row;
+  top: 5rem;
+  position: absolute;
 }
 .text_home{
   margin-left: 5%;
@@ -36,7 +77,7 @@ body {
   position: absolute;
   top: 7rem;
   left: 2rem;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +100,7 @@ body {
 #sub_home{
   color: rgb(70, 68, 68);
   font-size: clamp(0.5rem,3vw,2rem);
+  font-weight:500;
 }
 .img_home{
   float: left;
@@ -68,12 +110,11 @@ body {
 /*<=========EM DESTAQUE===========>*/
 
 .highlights {
-  margin-top: 50vh;
+  margin-top: 70%;
 }
-
-@media (min-width: 570px) {
-  .highlights {
-    margin-top: 120vh;
+@media only screen and (min-width: 1000px) {
+  .highlights{
+    margin-top: 60%;
   }
 }
 
@@ -82,6 +123,7 @@ body {
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 4rem;
+  font-weight: bold;
 }
 
 .pets-cards{
@@ -100,7 +142,8 @@ body {
   align-content: center;
   color: black;
   width: 90vw;
-  max-width: 45rem;
+  max-width: 40rem;
+  cursor: pointer;
 }
 
 .pet-card h1 {
@@ -123,7 +166,7 @@ body {
 
 .image-card {
   width: 90vw;
-  max-width: 45rem;
+  max-width: 40rem;
   height: 60%;
 }
 
@@ -138,13 +181,10 @@ body {
 .tags {
   display: flex;
   gap: 1rem;
-
   width: 95%;
   padding: 1rem;
   border-bottom: 1px solid #000;
   margin: 0 auto;
-
-  overflow: scroll;
 }
 
 @media (min-width: 500px) {
@@ -153,12 +193,10 @@ body {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-  
     width: 95%;
     padding: 1rem;
     border-bottom: 1px solid #000;
     margin: 0 auto;
-  
     overflow: hidden;
   }
 }
@@ -195,7 +233,6 @@ body {
   width: 90%;
   padding: 1rem;
   margin: 1.6rem auto;
-
   border-radius: 999rem;
   background-color: transparent;
   cursor: pointer;
@@ -225,14 +262,14 @@ body {
 .img_anuncio{
     position: relative;
     width: 100%;
-    top: 5rem;
+    top: 86rem;
     
 }
 /*<=================================================>*/
-/*<======AREA DE DOAÇÃO (Faça a diferença...)=======>*/
+/*<======Redirecionamento para a pag Animais Perdidos (Perdeu seu pet?)=======>*/
 
 .donate {
-  margin-top: 8rem;
+  margin-top: 5rem;
   text-align: center;
 }
 #fundo{
@@ -262,7 +299,6 @@ body {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-
 }
 .content button:after {
  position: absolute;
@@ -377,9 +413,9 @@ body {
 
 .details {
   position: relative;
-  display: flex;
   margin: 0 auto;
   justify-content: center;
+  
 }
 
 .details_section {
@@ -390,8 +426,8 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  gap: 8rem;
-  width: 50vw;
+  gap: 5rem;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -450,7 +486,7 @@ body {
   }
 }
 
-@media (min-width:1400px){
+@media (min-width:1000px){
   .pets-cards {
     flex-direction: row;
   }
@@ -503,157 +539,7 @@ body {
   }
 }
 
-@keyframes handleAnimation {
-  0% {
-    rotate: 40deg;
-  }
+@media (max-width: 920px) {
 
-  100% {
-    rotate: 60deg;  
-  }
-  
-}
-.header-wave {
-  position:relative;
-  text-align:center;
-  background: #E9E9E9;
-  color:white;
-  margin-top: 10vh;
-}
-
-
-.inner-header {
-  height:65vh;
-  width:100%;
-  margin: 0;
-  padding: 0;
-}
-
-.flex { /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.waves {
-  position:relative;
-  width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
-}
-
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-}
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
-}
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
-}
-
-.details-waves {
-  background-color: #024060;
-  width: 100vw;
-  padding-top: 10rem;
-
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-
-.waves-card {
-  padding: 5rem 3rem;
-  border: 2px solid #67B8E5;
-  width: 90vw;
-  max-width: 40rem;
-  border-radius: .8rem;
-
-  display: flex;
-  flex-direction: column;
-
-  position: relative;  
-}
-
-.waves-card:nth-child(2){
-  border: 2px solid #FA9C94;
-}
-
-.waves-card:nth-child(3){
-  border: 2px solid #A09165;
-}
-
-.waves-card img {
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover;
-
-  position: absolute;
-  top: -3rem;
-}
-
-.waves-card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.waves-card-text h1 { 
-  font-size: 2.4rem;
-  font-weight: bold;
-}
-
-.waves-card-text p {
-  text-align: initial;
-  font-size: 1.8rem;
-}
-
-.waves-card:hover {
-  transform: translateY(-1.5rem);
-  transition-duration: 300ms;
-}
-
-@media (max-width: 1290px) {
-  .details-waves {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12rem;
-
-  }
 }
 

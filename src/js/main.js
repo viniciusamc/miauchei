@@ -1,28 +1,20 @@
 const fecharPopup = document.querySelector('.close-window');
 const logoHeader = document.querySelector('.logoHeader')
-const btnMobile = document.querySelector('#btn-mobile')
 const anunciar = document.querySelector('.anunciar');
 const popup = document.querySelector('.pop-dialog')
+const btnMenu = document.querySelector('.menuBar')
 const liMobile = document.querySelectorAll('li')
 const header = document.querySelector('header')
 const logo = document.querySelector('.logo')
 const body = document.querySelector('body')
-const nav = document.querySelector('nav');
+const nav = document.querySelector('nav')
 
-const toggleMenuProfile = document.querySelector('.menu');
-const userPic = document.querySelector(".profile img")
 
-function handleMenu(){
-  toggleMenuProfile.classList.toggle("active")
+function toggleMenu() {
+  header.classList.toggle('activeMenu')
+  nav.classList.toggle('hide')
+  body.classList.toggle('overflow')
 }
-
-userPic.addEventListener('click', handleMenu)
-
-function toggleMenu(){
-  nav.classList.toggle("active");
-}
-
-btnMobile.addEventListener('click', toggleMenu)
 
 function togglePopUp(){
   popup.showModal();
@@ -33,6 +25,7 @@ function closeWindow(){
 }
 
 function onScroll() {
+  console.log(scrollY);
   if (scrollY > 115) {
     logo.classList.remove('hide')
     logoHeader.classList.remove('hide')
@@ -43,5 +36,7 @@ function onScroll() {
   }
 };
 
+
+btnMenu.addEventListener('click', toggleMenu);
 anunciar.addEventListener('click', togglePopUp);
 fecharPopup.addEventListener('click',closeWindow);
