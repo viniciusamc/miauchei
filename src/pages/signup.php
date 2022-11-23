@@ -30,9 +30,26 @@
 
       <fieldset>
         <div class="input">
+
+        <div class="input-wrapper">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+          </div>
+
             <div class="input-wrapper">
-              <label for="name" class="sr-only">Username</label>
-              <input type="text" id="name" name="username" placeholder="Username">
+              <label for="name" class="sr-only">Nome</label>
+              <input type="text" id="name" name="username" placeholder="Nome">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="idade" class="sr-only">Idade</label>
+              <input type="number" id="idade" name="idade" placeholder="Idade" min="0" max="124">
+            </div>
+
+
+            <div class="input-wrapper">
+              <label for="tel" class="sr-only">Telefone</label>
+              <input type="tel" id="tel" name="tel" placeholder="Número Telefone">
             </div>
           <!-- 
           <div class="input-wrapper">
@@ -45,21 +62,20 @@
             <input type="number" id="cpf" name="cpf" placeholder="CPF">
           </div> -->
 
-          <div class="input-wrapper">
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email">
-          </div>
 
-          <div class="input-wrapper">
-            <label for="Password" class="sr-only">Senha</label>
-            <input type="password" id="password" placeholder="Senha" name="password">
-          </div>
+          <div class="col-2">
 
-          <div class="input-wrapper">
-            <label for="confirmPassword" class="sr-only">Confirmar senha</label>
-            <input type="password" id="password_confirm" placeholder="Confirmar senha" name="password_confirm">
+            <div class="input-wrapper">
+              <label for="Password" class="sr-only">Senha</label>
+              <input type="password" id="password" placeholder="Senha" name="password">
+            </div>
+            
+            <div class="input-wrapper">
+              <label for="confirmPassword" class="sr-only">Confirmar senha</label>
+              <input type="password" id="password_confirm" placeholder="Confirmar senha" name="password_confirm">
+            </div>
+            
           </div>
-
         </div>
 
         <!-- <div class="checkbox">
@@ -77,7 +93,7 @@
         <div class="interaction">
           <button type="submit" name="signup_btn" class="btn-submit">Cadastrar</button>
         </div>
-        <p>Já tem uma conta? <a href="login.php">Logar</a></p>
+        <p><a href="login.php">Já possui uma conta? Logar</a></p>
       </fieldset>
     </form>
   </main>
