@@ -20,6 +20,16 @@
   </div>
   <main>
 
+    <div class="content-text">
+      <div class="logo">
+        <img src="../images/iconsMiauchei/miauchei.svg" alt="">
+        <h1>Miauchei</h1>
+      </div>
+        <p>
+          Registre-se na plataforma miauchei.
+        </p>
+    </div>
+
     <form action="process_signup.php" method="POST">
           <?php  if(isset($_GET['error_message'])){  ?>
             <p id="error_message" class="text-center alert-danger"> <?php  echo $_GET['error_message']; ?> </p>
@@ -37,13 +47,13 @@
           </div>
 
             <div class="input-wrapper">
-              <label for="name" class="sr-only">Nome</label>
-              <input type="text" id="name" name="username" placeholder="Nome">
+              <label for="username" class="sr-only">Nome</label>
+              <input type="text" id="username" name="username" placeholder="Nome">
             </div>
 
             <div class="input-wrapper">
               <label for="idade" class="sr-only">Idade</label>
-              <input type="number" id="idade" name="idade" placeholder="Idade" min="0" max="124">
+              <input type="date" id="idade" name="idade" placeholder="Idade" min="1900-01-01" max="2025-01-01">
             </div>
 
 
@@ -93,15 +103,12 @@
         <div class="interaction">
           <button type="submit" name="signup_btn" class="btn-submit">Cadastrar</button>
         </div>
-        <p><a href="login.php">Já possui uma conta? Logar</a></p>
+        <p>Já possui uma conta?<a href="login.php"> Logar</a></p>
       </fieldset>
     </form>
   </main>
 
     <script>
-
-
-
             function verifyForm(){
 
                  var password = document.getElementById('password').value;

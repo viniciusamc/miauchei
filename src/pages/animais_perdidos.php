@@ -22,12 +22,12 @@ include('../php/get_latest_posts_perdidos.php'); ?>
 <header>
     <div class="header-content">
       <nav>
-        <a href="#" id="logo"><img src="../images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei"></a>
+        <a href="../../index2.html" id="logo"><img src="../images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei"></a>
         <button id="btn-mobile"><img src="src/images/svg/menubar.svg" alt=""></button>
         <ul id="menu-header">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Animais Perdidos</a></li>
-          <li><a href="#">Adoção</a></li>
+          <li><a href="../../index2.html">Início</a></li>
+          <li><a href="animais_perdidos.php">Animais Perdidos</a></li>
+          <li><a href="animais_adocao.php">Adoção</a></li>
           <li><a href="#">Sobre nós</a></li>
         </ul>
       </nav>
@@ -112,17 +112,15 @@ include('../php/get_latest_posts_perdidos.php'); ?>
         </form>
       </dialog>
     </section>
-
-      <?php foreach($posts as $post){ ?>
-
-    <section class="feed">   
-
+    
+    <section class="feed"> 
+      <?php foreach($posts as $post){ ?>  
       <section class="pet-card">
         <section class="image-card">
           <img src="<?php echo "../../img/imagens_posts/". $post['image'];?>" class="post-image"/>
           
          <div class="tags"><span class="pet-tag">
-          <?php echo $post['nome_pet']; ?> 
+          <?php echo $post['raca']; ?> 
          </span> 
            <span class="situacao-tag">Perdido</span> 
            <span class="data-tag"><?php echo date("D, M, Y", strtotime($post['data_que_perdeu']));?></span>
@@ -130,9 +128,9 @@ include('../php/get_latest_posts_perdidos.php'); ?>
           
           <div class="desc-pet">
             <h1>
-              <?php echo "Descrição: ".$post['descricao'];?>
+              <?php echo $post['nome_pet'];?>
             </h1>
-            <p class="endereco-pet">
+            <p class="<?php echo $post['descricao']; ?>">
               Endereço - à fazer
             </p>
 

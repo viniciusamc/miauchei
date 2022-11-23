@@ -18,38 +18,53 @@ include('../php/get_latest_posts_adocao.php'); ?>
   <link rel="stylesheet" href="../styles/components/header/styles.css">
 </head>
 <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animais Perdidos - Miauchei</title>
 
-  <header class="">
-    <div class="logoHeader">
-      <img src="../images/iconsMiauchei/miauchei.svg" alt="LOGO MIAUCHEI">
-    </div>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="../../global.css">
+  <link rel="stylesheet" href="../styles/animais_perdidos/styles.css">
+  <link rel="stylesheet" href="../styles/components/header/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+      <nav>
+        <a href="../../index2.html" id="logo"><img src="../images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei"></a>
+        <button id="btn-mobile"><img src="src/images/svg/menubar.svg" alt=""></button>
+        <ul id="menu-header">
+          <li><a href="../../index2.html">Início</a></li>
+          <li><a href="animais_perdidos.php">Animais Perdidos</a></li>
+          <li><a href="animais_adocao.php">Adoção</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </nav>
     
-    <nav class="menuMobile hide">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="animais_perdidos.php">Animais Perdidos</a></li>
-        <li><a href="animais_adocao.php">Adoção</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-    </nav>
 
-    <nav class="menuDesktop hide">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="animais_perdidos.php">Animais Perdidos</a></li>
-        <li><a href="animais_adocao.php">Adoção</a></li>
-        <li><a href="#">Sobre nós</a></li>
-      </ul>
-    </nav>
-    
-    <div class="menuBar">
-      <img src="../images/svg/menubar.svg" alt="LOGO MIAUCHEI GATO E CACHORRO">
-    </div>
+      <div class="action">
+        <div class="profile">
+          <img src="https://github.com/viniciusamc.png" alt="">
+        </div>
 
-    <div class="icon">
-      <a href="src/pages/login.html"><img src="https://github.com/viiniciusgm.png" alt="Foto do usuário"></a>
+        <div class="menu">
+          <h3>Olá, Vinícius</h3>
+          <ul>
+            <li><a href="">Meu Perfil<img src="../images/svg/nameInput.svg" alt=""></a></li>  
+            <li><a href="">Editar Perfil <img src="../images/svg/gear-solid.svg" alt=""></a></li>
+            <li><a href="">Posts Salvos <img src="../images/svg/star-regular.svg" alt=""></a></li>
+            <li><a href="">Ajuda <img src="../images/svg/circle-question-regular.svg" alt=""></a></li>
+            <li><a href="signup.php">Sair <img src="../images/svg/right-from-bracket-solid.svg" alt=""></a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </header>
+
 
   <main>
 

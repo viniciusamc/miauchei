@@ -6,6 +6,21 @@ body {
   background-color: #E9E9E9;
 }
 
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+@media (max-width: 910px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
 .decoration{
   position: fixed;
   top: -1rem;
@@ -20,12 +35,29 @@ body {
   z-index: -1;
 }
 
+.content-text .logo{
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.logo h1 {
+  font-size: 2.6rem;
+}
+
+.content-text p {
+  font-size: 1.8rem;
+}
+
 form{
-  margin-top: -2rem;
-  background-color: var(--brown);
+  background-color: var(--blue);
   width: 100vw;
   max-width: clamp(26rem, 26rem + 15vw, 44rem);
-  height: clamp(44rem, 44rem + 15vw, 55rem);
   border-radius: 8px;
   padding: .5rem 4rem 4rem; 
 
@@ -86,15 +118,7 @@ fieldset {
   border: none;
 }
 
-.input div:nth-child(1) input, #lastName{
-  background-image: url('../../images/nameInput.svg');
-  background-repeat: no-repeat;
-  background-position: center left 1rem;
-  padding-left: 3rem;
-  background-size: 1.6rem;
-}
-
-.input div:nth-child(2) input{
+.input div:nth-child(1) input{
   background-image: url('../../images/svg/email.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -102,7 +126,41 @@ fieldset {
   background-size: 1.6rem;
 }
 
-.input div:nth-child(3) input, .input div:nth-child(4) input{  
+.input div:nth-child(2) input{
+  background-image: url('../../images/nameInput.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+}
+
+.input div:nth-child(3) input{
+  background-image: url('../../images/svg/cake-candles-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input div:nth-child(4) input{
+  background-image: url('../../images/svg/phone-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+
+}
+
+
+.input div:nth-child(5) input, .input div:nth-child(6) input{  
   background-image: url('../../images/svg/lock-solid.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -133,14 +191,14 @@ a{
   padding: 1rem 0;
   border: none;
   border-radius: 8px;
-  background-color: var(--btn-brown);
+  background-color: var(--bg);
   margin: 2rem 0;
   cursor: pointer;
+  color: black;
+  font-size: 1.6rem;
 }
 
 .btn-submit:hover{
-  transform: scale(1.01);
-  background-color: var(--btn-fill);
   transition-duration: 200ms;
 }
 
@@ -190,6 +248,15 @@ a{
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+fieldset p, fieldset p a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+fieldset p a {
+  color: #0f0;
 }
 
 
