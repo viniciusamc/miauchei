@@ -143,11 +143,14 @@ nav {
   transition: .6s;
 } */
 
+<<<<<<< HEAD
 .menu h3 {
   display: none;
   border-bottom: 1px solid #000;
 }
 
+=======
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 @media (max-width: 800px) {
   #btn-mobile {
     display: block;
@@ -197,7 +200,9 @@ nav {
     height: calc(100vh - 7rem);
     visibility: visible;
   }
+}
 
+<<<<<<< HEAD
   .action p {
     display: none;
   }
@@ -216,6 +221,13 @@ nav {
   flex-direction: row;
 }
 
+=======
+.action {
+  position: fixed;
+  right: 2rem;
+}
+
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 .action .profile {
   border-radius: 999rem;
   cursor: pointer;
@@ -223,6 +235,10 @@ nav {
   height: 4rem;
   overflow: hidden;
   position: relative;
+<<<<<<< HEAD
+=======
+  padding: 0!important;
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 }
 
 .action .profile img {
@@ -275,16 +291,23 @@ nav {
 }
 
 .action .menu ul li {
+<<<<<<< HEAD
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+=======
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
   display: flex;
   justify-content: left;
   padding: 1rem 0;
 }
 
+<<<<<<< HEAD
 .action p {
   margin-bottom: 0!important;
 }
 
+=======
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 .menu ul{
   list-style: none;
   display: flex;

@@ -24,6 +24,14 @@ function toggleMenu(){
 
 btnMobile.addEventListener('click', toggleMenu)
 
+userPic.addEventListener('click', handleMenu)
+
+function toggleMenu(){
+  nav.classList.toggle("active");
+}
+
+btnMobile.addEventListener('click', toggleMenu)
+
 function togglePopUp(){
   popup.showModal();
 }

@@ -20,7 +20,12 @@ body {
 }
 
 form{
+<<<<<<< HEAD
   background-color: var(--brown);
+=======
+  margin-top: -2rem;
+  background-color: var(--blue);
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
   width: 100vw;
   max-width: clamp(26rem, 26rem + 15vw, 44rem);
   border-radius: 8px;
@@ -111,15 +116,43 @@ fieldset {
   background-size: 1.6rem;
 }
 
+<<<<<<< HEAD
 .input div:nth-child(3) input{  
+=======
+.input div:nth-child(3) input{
+  background-image: url('../../images/svg/cake-candles-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center left 1rem;
+  padding-left: 3rem;
+  background-size: 1.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input div:nth-child(4) input{
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
   background-image: url('../../images/svg/phone-solid.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
   padding-left: 3rem;
   background-size: 1.6rem;
+<<<<<<< HEAD
 }
 
 .input div:nth-child(4) input, .input div:nth-child(5) input {
+=======
+
+}
+
+
+.input div:nth-child(5) input, .input div:nth-child(6) input{  
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
   background-image: url('../../images/svg/lock-solid.svg');
   background-repeat: no-repeat;
   background-position: center left 1rem;
@@ -150,14 +183,14 @@ a{
   padding: 1rem 0;
   border: none;
   border-radius: 8px;
-  background-color: var(--btn-brown);
+  background-color: var(--bg);
   margin: 2rem 0;
   cursor: pointer;
+  color: black;
+  font-size: 1.6rem;
 }
 
 .btn-submit:hover{
-  transform: scale(1.01);
-  background-color: var(--btn-fill);
   transition-duration: 200ms;
 }
 
@@ -207,6 +240,11 @@ a{
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+fieldset p, fieldset p a {
+  color: #fff;
+  font-size: 1.6rem;
 }
 
 

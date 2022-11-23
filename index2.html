@@ -12,7 +12,6 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
@@ -23,11 +22,18 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="src/styles/home/styles.css">
     <link rel="stylesheet" href="src/styles/components/header/styles.css">
+  <script src="src/js/main.js" defer></script>
 
+  <link rel="stylesheet" href="https://app.boteria.com.br/cdn/webchat/webchat.v2.css" />
+  <script src="https://app.boteria.com.br/cdn/libs/showdown.min.js"></script>
+  <script src="https://app.boteria.com.br/cdn/libs/axios.js"></script>
+  <script src="https://app.boteria.com.br/cdn/libs/socket.io.js"></script>
+  <script src="https://app.boteria.com.br/cdn/webchat/webchat.js"></script>
 </head>
 
 <body id="body">
 <!--<===============MENU/CABEÇALHO==================>-->
+<<<<<<< HEAD
 
   <header>
     <div class="header-content">
@@ -63,17 +69,59 @@
       </div>
     </div>
   </header>
+=======
+<header>
+  <div class="header-content">
+    <nav>
+      <a href="#" id="logo"><img src="src/images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei"></a>
+      <button id="btn-mobile"><img src="src/images/svg/menubar.svg" alt=""></button>
+      <ul id="menu-header">
+        <li><a href="#">Início</a></li>
+        <li><a href="src/pages/animais_perdidos.php">Animais Perdidos</a></li>
+        <li><a href="#">Adoção</a></li>
+        <li><a href="#">Sobre nós</a></li>
+      </ul>
+    </nav>
+  
+
+    <div class="action">
+      <div class="profile">
+        <img src="https://github.com/viniciusamc.png" alt="">
+      </div>
+
+      <div class="menu">
+        <h3>Olá, Vinícius</h3>
+        <ul>
+          <li><a href="">Meu Perfil<img src="src/images/svg/nameInput.svg" alt=""></a></li>
+          <li><a href="">Editar Perfil <img src="src/images/svg/gear-solid.svg" alt=""></a></li>
+          <li><a href="">Posts Salvos <img src="src/images/svg/star-regular.svg" alt=""></a></li>
+          <li><a href="">Ajuda <img src="src/images/svg/circle-question-regular.svg" alt=""></a></li>
+          <li><a href="">Sair <img src="src/images/svg/right-from-bracket-solid.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+  <!--<======================================================>-->
+  
+  <main>
+    <section class="home">
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 
   <!--<======================================================>-->
 
 
     <section class="home">
       <section class="content_home">
+<<<<<<< HEAD
         <!----Logo------>
       <!-- <section class="logo">
         <img src="src/images/iconsMiauchei/miauchei.svg" alt="Logo Miauchei">
         <h1>MIAUCHEI</h1>
       </section> -->
+=======
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
       <section class="text_home">
         <h2 id="sub_home"><div>👋</div> <span>Seja Bem-vindo!</span></h2>
         <h1 id="title_home">Miauchei, encontre seu melhor amigo!</h1>
@@ -87,245 +135,246 @@
 
 
 <!--<============================DESTAQUE=====================================>-->
-      <section class="highlights">
-        <h2>Em Destaques</h2>
+<section class="highlights">
+  <h2>Em Destaques</h2>
 
-        <section class="pets-cards">
+  <section class="pets-cards">
 
-          <section class="pet-card">
-            <section class="image-card">
-              <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Pet em destaque 1">
-              
-             <div class="tags"><span class="pet-tag">Cachorro</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">01/11/2022</span></div>
-              <div class="desc-pet">
-                <h1>
-                  Dolg
-                </h1>
-                <p class="endereco-pet">
-                  Rua 1 Bairro Jundiai - Santa Isabel, SP
-                </p>
-                <p class="desc-detalhada-pet">
-                  Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
-                </p>
-                <button>Ver detalhes...</button>
-              </div>
-              </section>
-          </section>      
-          
-          <section class="pet-card">
-            <section class="image-card">
-              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="Pet em destaque 1">
-              
-             <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">28/10/2022</span></div>
-              <div class="desc-pet">
-                <h1>
-                  Dolg
-                </h1>
-                <p class="endereco-pet">
-                  Rua 1 Bairro Jundiai - Santa Isabel, SP
-                </p>
-                <p class="desc-detalhada-pet">
-                  Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
-                </p>
-                <button>Ver detalhes...</button>
-              </div>
-              </section>
-          </section>  
-          
-          <section class="pet-card">
-            <section class="image-card">
-              <img src="https://media.istockphoto.com/photos/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised-picture-id1361394182?b=1&k=20&m=1361394182&s=170667a&w=0&h=cW_NDV-D-jrWBVcEPclIU9vRipFQZQC0armvGMN7w-c=" alt="Pet em destaque 1">
-              
-             <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">21/10/2022</span></div>
-              <div class="desc-pet">
-                <h1>
-                  Dolg
-                </h1>
-                <p class="endereco-pet">
-                  Rua 1 Bairro Jundiai - Santa Isabel, SP
-                </p>
-                <p class="desc-detalhada-pet">
-                  Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
-                </p>
-                <button>Ver detalhes...</button>
-              </div>
-              </section>
-          </section>  
+    <section class="pet-card">
+      <section class="image-card">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Pet em destaque 1">
+        
+       <div class="tags"><span class="pet-tag">Cachorro</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">01/11/2022</span></div>
+        <div class="desc-pet">
+          <h1>
+            Dolg
+          </h1>
+          <p class="endereco-pet">
+            Rua 1 Bairro Jundiai - Santa Isabel, SP
+          </p>
+          <p class="desc-detalhada-pet">
+            Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+          </p>
+          <button>Ver detalhes...</button>
+        </div>
+        </section>
+    </section>      
+    
+    <section class="pet-card">
+      <section class="image-card">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="Pet em destaque 1">
+        
+       <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">28/10/2022</span></div>
+        <div class="desc-pet">
+          <h1>
+            Dolg
+          </h1>
+          <p class="endereco-pet">
+            Rua 1 Bairro Jundiai - Santa Isabel, SP
+          </p>
+          <p class="desc-detalhada-pet">
+            Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+          </p>
+          <button>Ver detalhes...</button>
+        </div>
+        </section>
+    </section>  
+    
+    <section class="pet-card">
+      <section class="image-card">
+        <img src="https://media.istockphoto.com/photos/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised-picture-id1361394182?b=1&k=20&m=1361394182&s=170667a&w=0&h=cW_NDV-D-jrWBVcEPclIU9vRipFQZQC0armvGMN7w-c=" alt="Pet em destaque 1">
+        
+       <div class="tags"><span class="pet-tag">Gato</span> <span class="situacao-tag">Perdido</span> <span class="data-tag">21/10/2022</span></div>
+        <div class="desc-pet">
+          <h1>
+            Dolg
+          </h1>
+          <p class="endereco-pet">
+            Rua 1 Bairro Jundiai - Santa Isabel, SP
+          </p>
+          <p class="desc-detalhada-pet">
+            Meu pet sumiu perto da praça da bandeira, foi visto pela ultima vez na praça da sé
+          </p>
+          <button>Ver detalhes...</button>
+        </div>
+        </section>
+    </section>  
 
-            </section>
       </section>
+</section>
 <!--<=====================ANÚNCIOS===========================>-->
 
 <section class="anuncio">
-  <img src="../miauchei/img/Anuncios/anuncio1.png" class="img_anuncio">
+<img src="../miauchei/img/Anuncios/anuncio1.png" class="img_anuncio">
 </section>
 <section class="anuncio">
-  <img src="../miauchei/img/Anuncios/anuncio2.png" class="img_anuncio">
+<img src="../miauchei/img/Anuncios/anuncio2.png" class="img_anuncio">
 </section>
 <section class="anuncio">
-  <img src="../miauchei/img/Anuncios/anuncio3.png" class="img_anuncio">
+<img src="../miauchei/img/Anuncios/anuncio3.png" class="img_anuncio">
 </section>
 
 <script>
-  var visitas = parseInt(localStorage.numeroVisitas, 10) || 0;
-  localStorage.numeroVisitas = visitas == 2 ? 0 : visitas +1 ;
-  
-  var banners = document.querySelectorAll('.anuncio');
-  [].forEach.call(banners, function (bn, i) {
-      bn.classList[i == visitas ? 'add' : 'remove']('mostrar');
-  });
+var visitas = parseInt(localStorage.numeroVisitas, 10) || 0;
+localStorage.numeroVisitas = visitas == 2 ? 0 : visitas +1 ;
+
+var banners = document.querySelectorAll('.anuncio');
+[].forEach.call(banners, function (bn, i) {
+bn.classList[i == visitas ? 'add' : 'remove']('mostrar');
+});
 
 </script>
 <!--<========================================================>-->
 <!--<=================FAÇA A DIFERENÇA=======================>-->
-      <section class="donate">
-      <img src="src/styles/home/fundo.png" id="fundo">
-        <section class="content">
-          <img src="src/images/iconsMiauchei/IMG_20220516_082859_009-removebg-preview 1.png" alt="Icone Miauchei">
-          <h2>Faça a diferença!</h2>
-          <button>Doar</button>
-        </section>
-      </section>
+<section class="donate">
+<img src="src/styles/home/fundo.png" id="fundo">
+  <section class="content">
+    <img src="src/images/iconsMiauchei/IMG_20220516_082859_009-removebg-preview 1.png" alt="Icone Miauchei">
+    <h2>Faça a diferença!</h2>
+    <button>Doar</button>
+  </section>
+</section>
 <!--<========================================================>-->
 
 <!--<===================AVALIAÇÕES===========================>-->
 
-    <section>
-        <section class="container">
-            <section class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h2>Avaliações do nosso site</h2>
-            </section>
-            <section class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">  
-              
-            <!--=====================-->
-
-              <section class="testimonial-item rounded p-4">
-                <img src="img/testimonial-1.jpg" alt="Foto Usuário opinião">
-              <section class="testimonial-text">
-                <section>
-                  <h6>Laura Silva</h6>
-                  <small>Veterinária</small>
-                </section>    
-                <p>“Um ótimo site, super recomendo!”</p>
-              </section >
-              </section>
-
-              <!--=====================-->
-
-                <section class="testimonial-item rounded p-4">
-                  <img src="img/testimonial-2.jpg" alt="Foto Usuário opinião">  
-                  <section class="testimonial-text">
-                  <section>
-                    <h6>Guilherme Souza</h6>
-                    <small>Vendedor</small>
-                  </section>
-                  <p>"Muito bom encontrar uma plataforma tão completa, que ajuda os animais"</p>
-                </section>
-                </section>
-
-              <!--=====================-->
-
-                <section class="testimonial-item rounded p-4">
-                  <img src="img/testimonial-3.jpg" alt="Foto Usuário opinião">
-                  <section class="testimonial-text">
-                  <section>
-                      <h6>Bruno Maia</h6>
-                      <small>Personal</small>
-                    </section>
-                  <p>“Adotei a o meu gato por aqui!”</p>
-                </section>
-                </section>
-              <!--=====================-->
-             
-                <section class="testimonial-item rounded p-4">
-                  <img src="img/testimonial-4.jpg" alt="Foto Usuário opinião">  
-                  <section class="testimonial-text">
-                  <section>
-                    <h6>Ana Clara</h6>
-                    <small>Professora</small>
-                  </section>
-                  <p> “Graças ao MiAuchei meu dog foi encontrado!”</p>
-                </section>
-                </section>
-            </section>
-        </section>
-    </section>
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-
-    <script>
-    (function ($) {
-        "use strict";
-
-
-        // Testimonials carousel
-        $(".testimonial-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            center: true,
-            dots: false,
-            loop: true,
-            nav : true,
-            navText : [
-                '<i class="bi bi-chevron-left"></i>',
-                '<i class="bi bi-chevron-right"></i>'
-            ],
-            responsive: {
-                0:{
-                    items:1
-                },
-                576:{
-                    items:1
-                },
-                768:{
-                    items:2
-                },
-                992:{
-                    items:3
-                }
-            }
-        });
-
-
-        // Client carousel
-        $(".client-carousel").owlCarousel({
-            autoplay: true,
-            smartSpeed: 1000,
-            margin: 90,
-            dots: false,
-            loop: true,
-            nav : false,
-            responsive: {
-                0:{
-                    items:2
-                },
-                576:{
-                    items:3
-                },
-                768:{
-                    items:4
-                },
-                992:{
-                    items:5
-                },
-                1200:{
-                    items:6
-                }
-            }
-        });
+<section>
+  <section class="container">
+      <section class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+          <h2>Avaliações do nosso site</h2>
+      </section>
+      <section class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">  
         
-    })(jQuery);
-    </script>
+      <!--=====================-->
+
+        <section class="testimonial-item rounded p-4">
+          <img src="img/testimonial-1.jpg" alt="Foto Usuário opinião">
+        <section class="testimonial-text">
+          <section>
+            <h6>Laura Silva</h6>
+            <small>Veterinária</small>
+          </section>    
+          <p>“Um ótimo site, super recomendo!”</p>
+        </section >
+        </section>
+
+        <!--=====================-->
+
+          <section class="testimonial-item rounded p-4">
+            <img src="img/testimonial-2.jpg" alt="Foto Usuário opinião">  
+            <section class="testimonial-text">
+            <section>
+              <h6>Guilherme Souza</h6>
+              <small>Vendedor</small>
+            </section>
+            <p>"Muito bom encontrar uma plataforma tão completa, que ajuda os animais"</p>
+          </section>
+          </section>
+
+        <!--=====================-->
+
+          <section class="testimonial-item rounded p-4">
+            <img src="img/testimonial-3.jpg" alt="Foto Usuário opinião">
+            <section class="testimonial-text">
+            <section>
+                <h6>Bruno Maia</h6>
+                <small>Personal</small>
+              </section>
+            <p>“Adotei a o meu gato por aqui!”</p>
+          </section>
+          </section>
+        <!--=====================-->
+       
+          <section class="testimonial-item rounded p-4">
+            <img src="img/testimonial-4.jpg" alt="Foto Usuário opinião">  
+            <section class="testimonial-text">
+            <section>
+              <h6>Ana Clara</h6>
+              <small>Professora</small>
+            </section>
+            <p> “Graças ao MiAuchei meu dog foi encontrado!”</p>
+          </section>
+          </section>
+      </section>
+  </section>
+</section>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<script>
+(function ($) {
+  "use strict";
+
+
+  // Testimonials carousel
+  $(".testimonial-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      center: true,
+      dots: false,
+      loop: true,
+      nav : true,
+      navText : [
+          '<i class="bi bi-chevron-left"></i>',
+          '<i class="bi bi-chevron-right"></i>'
+      ],
+      responsive: {
+          0:{
+              items:1
+          },
+          576:{
+              items:1
+          },
+          768:{
+              items:2
+          },
+          992:{
+              items:3
+          }
+      }
+  });
+
+
+  // Client carousel
+  $(".client-carousel").owlCarousel({
+      autoplay: true,
+      smartSpeed: 1000,
+      margin: 90,
+      dots: false,
+      loop: true,
+      nav : false,
+      responsive: {
+          0:{
+              items:2
+          },
+          576:{
+              items:3
+          },
+          768:{
+              items:4
+          },
+          992:{
+              items:5
+          },
+          1200:{
+              items:6
+          }
+      }
+  });
+  
+})(jQuery);
+</script>
 <!--<========================================================>-->
 <!--<===============DETALHES/INFORMAÇÕES=====================>-->
 
 <div class="header-wave">
+<<<<<<< HEAD
   
   <div>
   <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -380,5 +429,66 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+=======
+
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="#FFD962" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="#A06442" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#024060" />
+</g>
+</svg>
+
+<section class="details-waves">
+
+<div class="waves-card">
+<img src="src/images/1x/card1.png" alt="">
+
+<div class="waves-card-text">
+  <h1>Incentivamos</h1>
+  <p>Incentivamos a adoção, o cuidado, a castração e o não abandono </p>
+</div>
+</div>
+
+<div class="waves-card">
+<img src="src/images/1x/card2.png" alt="">
+
+<div class="waves-card-text">
+  <h1>Anunciamos</h1>
+  <p>Anunciamos seu pet perdido. </p>
+</div>
+</div>
+
+<div class="waves-card">
+<img src="src/images/1x/card3.png" alt="">
+
+<div class="waves-card-text">
+  <h1>Achamos um lar</h1>
+  <p>Os animais encontrados, agora podem ter um lar.</p>
+</div>
+</div>
+
+</section>
+</div>
+<!--Waves end-->
+</div>
+
+<section>
+  <script>
+    window.renderBotWidget(
+      '6377f2426b0aa9001987fa85'
+    );
+  </script>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 </body>
 </html>

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 *{
   margin: 0;
   padding: 0;
@@ -15,14 +18,8 @@ body {
 }
 
 /*<============FRENTE DO SITE==============>*/
-.logo{
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  align-items: center;
-}
 
+<<<<<<< HEAD
 .logo img {
   width: clamp(4vw, 3vw + 3vw, 10vw);
   background-color: transparent;
@@ -31,6 +28,8 @@ body {
   font-size: clamp(0.5rem,2vw,1.8rem);  
 }
 
+=======
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 .content_home{
   width: 100vw;
   height: 100vh;
@@ -78,6 +77,7 @@ body {
   font-size: clamp(0.5rem,3vw,3rem);
 }
 
+<<<<<<< HEAD
 #sub_home span {
   margin-left: 4rem;
 }
@@ -87,6 +87,16 @@ body {
   height: 1rem;
   animation: handleAnimation 1s infinite alternate-reverse;
   transform-origin: 70% 250%;
+=======
+.highlights {
+  margin-top: 50vh;
+}
+
+@media (min-width: 570px) {
+  .highlights {
+    margin-top: 120vh;
+  }
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 }
 
 .img_home {
@@ -627,7 +637,11 @@ body {
 
 .waves-card {
   padding: 5rem 3rem;
+<<<<<<< HEAD
   border: 1px solid #67B8E5;
+=======
+  border: 2px solid #67B8E5;
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
   width: 90vw;
   max-width: 40rem;
   border-radius: .8rem;
@@ -638,6 +652,17 @@ body {
   position: relative;  
 }
 
+<<<<<<< HEAD
+=======
+.waves-card:nth-child(2){
+  border: 2px solid #FA9C94;
+}
+
+.waves-card:nth-child(3){
+  border: 2px solid #A09165;
+}
+
+>>>>>>> d35d39f917bfd6ff008263c746476c77f0733d5d
 .waves-card img {
   width: 6rem;
   height: 6rem;
