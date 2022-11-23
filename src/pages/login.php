@@ -1,39 +1,15 @@
-<?php 
-  include("../php/connection.php");
+<?php
+include("../php/connection.php");
+session_start();
 
-  if(isset($_POST['email']) || isset($_POST['senha'])){
-    if(strlen($_POST['email']) == 0){
-      echo "<script>alert('Preencha seu email!')</script>";
-  } else if(strlen($_POST['senha']) == 0){
-    echo "<script>alert('Preencha sua senha!')</script>";
-  } else {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    $sql_code = 'SELECT * FROM usuario WHERE email = "'.$email.'" AND senha = "'.$senha.'";';
-    $sql_query = mysqli_query($conexao ,$sql_code) or die("Falha na query");
-    $quantidade = mysqli_num_rows($sql_query);
-
-    if($quantidade == 1){
-      $usuario = $sql_query->fetch_assoc();
-
-      if(!isset($_SESSION)){
-        session_start();
-      }
-
-      $_SESSION['id'] = $usuario['id'];
-      $_SESSION['nome'] = $usuario['nome'];
-
-      header("location: ../../index.html");
-
-    } else {
-      echo "<script>alert('Erro, email ou senha incorretos!')</script>";
-    }
-  }}
 ?>
 
+
+
+
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,8 +34,10 @@
       <div class="bowl"><img src="../images/iconsBackground/bowl.svg" alt=""></div>
       <div class="cat"><img src="../images/iconsBackground/cat.svg" alt=""></div>
     </div>
-      <form action="#" method="post">
-
+      <form action="process_login.php" method="POST">
+            <?php if(isset($_GET['error_message'])){  ?>
+              <p id="error_message" class="text-center alert-danger"> <?php echo $_GET['error_message']; ?> </p>
+            <?php } ?>
 
       <legend>
         <img src="../images/svglogo.svg" alt="Logo Marca">
@@ -74,15 +52,14 @@
           
           <div class="input-wrapper">
             <label for="password" class="sr-only">Senha</label>
-            <input type="password" id="password" name="senha" placeholder="Senha" required>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
           </div>
         </div>
-        <a href="#" class="forgot-password">Esqueceu a senha?</a>
         
         <div class="interaction">
-          <button type="submit" class="btn-submit">Entrar</button>
+          <button type="submit" class="btn-submit" name="login_btn">Entrar</button>
           
-          <a href="register.html" class="register">Ainda não cadastrado?</a>
+          <a href="signup.php" class="register">Ainda não cadastrado?</a>
         </div>
       </fieldset>
 
@@ -101,5 +78,28 @@
 
     </form>
   </main>
+</body>
+    <script>
+
+
+            function verifyForm(){
+
+                var password = document.getElementById('password').value;
+                var error_message = document.getElementById('error_message');
+
+
+                if(password.length < 6){
+                    error_message.innerHTML = "Senha é muito curta";
+                    return false;
+                }
+
+                
+
+                return true;
+
+            }
+
+
+    </script>
 </body>
 </html>
