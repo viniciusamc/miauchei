@@ -15,7 +15,7 @@ const userPic = document.querySelector(".profile img")
 function handleMenu(){
   toggleMenuProfile.classList.toggle("active")
 }
-
+  
 userPic.addEventListener('click', handleMenu)
 
 function toggleMenu(){

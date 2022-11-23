@@ -143,6 +143,11 @@ nav {
   transition: .6s;
 } */
 
+.menu h3 {
+  display: none;
+  border-bottom: 1px solid #000;
+}
+
 @media (max-width: 800px) {
   #btn-mobile {
     display: block;
@@ -192,11 +197,23 @@ nav {
     height: calc(100vh - 7rem);
     visibility: visible;
   }
+
+  .action p {
+    display: none;
+  }
+
+  .menu h3 {
+    display: flex;
+  }
 }
 
 .action {
   position: fixed;
   right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
 }
 
 .action .profile {
@@ -258,10 +275,14 @@ nav {
 }
 
 .action .menu ul li {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: left;
   padding: 1rem 0;
+}
+
+.action p {
+  margin-bottom: 0!important;
 }
 
 .menu ul{
