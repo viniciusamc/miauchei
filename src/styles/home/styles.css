@@ -266,6 +266,7 @@ body {
   position: relative;
   display: inline-block;
   text-decoration: none;
+  overflow: auto;
 }
 #anuncie_btn:after {
  position: absolute;
@@ -725,6 +726,7 @@ body {
   border-bottom-left-radius: 15px !important; 
   border-bottom-right-radius: 15px !important;
 }
+
 /*<======================FOOTER================>*/
 footer{
   overflow-y: none;
@@ -778,4 +780,8 @@ footer li{
 
 .footer-copyright p{
   margin-bottom: 0px;
+}
+
+#bot-widget-container-faq {
+  position: fixed;
 }

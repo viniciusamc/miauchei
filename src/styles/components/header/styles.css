@@ -224,7 +224,7 @@ nav {
   padding: 1rem;
   position: absolute;
   right: -1rem;
-  width: 20rem;
+  width: 25rem;
   transition: 0.5s;
   top: 12rem;
   visibility: hidden;
@@ -235,6 +235,7 @@ nav {
   opacity: 1;
   top: 6.5rem;
   visibility: visible;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .action .menu::before {
