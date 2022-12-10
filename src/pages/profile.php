@@ -75,7 +75,7 @@ if(!isset($_SESSION['id'])){
                   <h1 class="profile-user-name"> <?php echo $_SESSION['username']; ?> </h1>
                   
                   <button class="profile-btn profile-settings-btn" id="options_btn" aria-label="profile settings">
-                        <i class="fas fa-cog"></i>
+                        Editar Perfil
                   </button>
 
                   <section class="popup" id="popup">
@@ -99,10 +99,6 @@ if(!isset($_SESSION['id'])){
               <section class="profile-stats">
                   <ul>
                       <li><span class="profile-stat-count"><?php echo $_SESSION['posts']; ?></span> - Posts criados</li>
-
-                    
-
-                      
                   </ul>
               </section>
               <section class="profile-bio">

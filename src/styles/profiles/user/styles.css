@@ -28,6 +28,8 @@ body{
 
 .profile{
     padding: 5rem 0;
+    position: relative;
+
 }
 
 .profile::after{
@@ -62,9 +64,7 @@ body{
 }
 
 .profile-user-name{
-    display: inline-block;
-    font-size: 3.5rem;
-    font-weight: 300;
+  font-size: 3.5rem;
 }
 
 .profile-edit-btn{
@@ -77,8 +77,20 @@ body{
 }
 
 .profile-settings-btn{
-    font-size: 2rem;
-    margin-left: 30vw;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  font-size: 1.6rem;
+}
+
+.profile-settings-btn:hover{
+  background-color: #fff;
+  color: #000;
+  transition-duration: 300ms;
 }
 
 .profile-stats{
@@ -162,7 +174,6 @@ body{
     text-align: center;
     outline: none;
     width: 100%;
-
 }
 
 
@@ -214,12 +225,7 @@ body{
     display: block;
     margin: 5px 2px;
     padding: 5px;
-
 }
-
-
-
-
 
 /*<====================================================>*/
 

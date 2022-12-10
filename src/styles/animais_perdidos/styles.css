@@ -97,6 +97,10 @@ main{
   padding: 1rem;
 }
 
+.input-wrapper input::placeholder, select::placeholder, textarea::placeholder{
+  font-size: 22px;
+}
+
 .pop-dialog textarea{
   resize: vertical;
 }
