@@ -1,12 +1,8 @@
 <?php
-include("../php/connection.php");
+include("../../php/connection.php");
 session_start();
 
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +14,7 @@ session_start();
   <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
   
   <link rel="stylesheet" href="../../global.css">
-  <link rel="stylesheet" href="../styles/login/style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <section class="decoration">
